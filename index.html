@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#007bff">
+    <title>Layanan Perawatan Luka - Pelayanan Jasa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Placeholder untuk logo -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Klinik" width="100"> <!-- Placeholder untuk logo -->
+            <h1>Layanan Perawatan Luka</h1>
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#services">🏥 Jasa Perawatan</a></li>
+                <li><a href="#products">📦 Alat & Bahan</a></li>
+                <li><a href="#tutorials">📚 Cara Perawatan</a></li>
+                <li><a href="#consultation">💬 Konsultasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services" class="dashboard active">
+            <h2>Jasa Perawatan dari Rumah</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="luka_kecil.png" alt="Luka Kecil" width="200">
+                    <h3>Luka Kecil</h3>
+                    <p>Harga:</p>
+                    <ul>
+                        <li>1x kunjungan: Rp 100.000</li>
+                        <li>1 minggu 2x kunjungan: Rp 175.000</li>
+                        <li>1 minggu 3x kunjungan: Rp 275.000</li>
+                    </ul>
+                    <button onclick="showNurseSelection('Luka Kecil')">Hubungi WA</button>
+                </div>
+                <div class="service-item">
+                    <img src="luka_besar.png" alt="Luka Besar" width="200">
+                    <h3>Luka Besar</h3>
+                    <p>Harga:</p>
+                    <ul>
+                        <li>1x kunjungan: Rp 150.000</li>
+                        <li>1 minggu 2x kunjungan: Rp 275.000</li>
+                        <li>1 minggu 3x kunjungan: Rp 425.000</li>
+                    </ul>
+                    <button onclick="showNurseSelection('Luka Besar')">Hubungi WA</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="dashboard">
+            <h2>Alat & Bahan Perawatan</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="paket_alat_bahan_rawat_komplit.png" alt="1 Set Alat Perawatan Luka" width="200">
+                    <h3>1 set alat perawatan luka</h3>
+                    <p>Harga: Rp 50.000</p>
+                    <p>Keterangan: paket meliputi kasa steril, perban, air infus, dan spuit</p>
+                    <button onclick="contactWA('1 set alat perawatan luka')">Beli via WA</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tutorials" class="dashboard">
+            <h2>Cara Perawatan di Rumah</h2>
+            <div class="tutorial-list">
+                <div class="tutorial-item">
+                    <img src="logo_tutor.png" alt="Logo Tutor" width="200" onclick="window.open('https://mega.nz/file/oOFRiKJa#NZU05Hs5gDjF6DHAVPnGFUEGWMoZcis0DQekzJvGC9c', '_blank')">
+                    <p>Tata cara perawatan luka mandiri dirumah bisa di akses video link berikut</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="consultation" class="dashboard">
+            <h2>Konsultasi/Hubungi Kami</h2>
+            <div class="consultation-list">
+                <div class="consultation-item">
+                    <img src="perawat 1.png" alt="Perawat 1" width="200">
+                    <h3>Ahmad Roni Faisol Hidayatulloh</h3>
+                    <p>Alamat: Jln Cilik Riwut 2 BTN Telaga Biru 2</p>
+                    <p>No WA: 082250445993</p>
+                    <button onclick="contactWAWithNumber('6282250445993', 'Konsultasi dengan Ahmad Roni Faisol Hidayatulloh')">Hubungi WA</button>
+                </div>
+                <div class="consultation-item">
+                    <img src="perawat 2.png" alt="Perawat 2" width="200">
+                    <h3>Khairul Huda</h3>
+                    <p>Alamat: Jln Ahmad Wongso RT 19 GG Itik 2 No 75</p>
+                    <p>No WA: 082158000550</p>
+                    <button onclick="contactWAWithNumber('6282158000550', 'Konsultasi dengan Khairul Huda')">Hubungi WA</button>
+                </div>
+                <div class="consultation-item">
+                    <img src="perawat 3.png" alt="Perawat 3" width="200">
+                    <h3>Yudha Fatih SB</h3>
+                    <p>Alamat:Jl. Samari 2 Gang Harapan</p>
+                    <p>No WA: 085777782248</p>
+                    <button onclick="contactWAWithNumber('6285777782248', 'Konsultasi dengan Yudha Fatih SB')">Hubungi WA</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Layanan Perawatan Luka. Semua hak dilindungi.</p>
+    </footer>
+
+    <!-- Modal untuk pemilihan perawat -->
+    <div id="nurseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Pilih Perawat untuk Luka Kecil</h2>
+            <div class="nurse-selection">
+                <div class="nurse-option">
+                    <img src="perawat 1.png" alt="Perawat 1" width="150">
+                    <h4>Ahmad Roni Faisol Hidayatulloh</h4>
+                    <p>Alamat: Jln Cilik Riwut 2 BTN Telaga Biru 2</p>
+                    <p>No WA: 082250445993</p>
+                    <button onclick="contactWAWithNumber('6282250445993', 'Luka Kecil')">Hubungi Saya</button>
+                </div>
+                <div class="nurse-option">
+                    <img src="perawat 2.png" alt="Perawat 2" width="150">
+                    <h4>Khairul Huda</h4>
+                    <p>Alamat: Jln Ahmad Wongso RT 19 GG Itik 2 No 75</p>
+                    <p>No WA: 082158000550</p>
+                    <button onclick="contactWAWithNumber('6282158000550', 'Luka Kecil')">Hubungi Saya</button>
+                </div>
+                <div class="nurse-option">
+                    <img src="perawat 3.png" alt="Perawat 3" width="150">
+                    <h4>Yudha Fatih SB</h4>
+                    <p>Alamat: Samari 2 Gang Harapan</p>
+                    <p>No WA: 085777782248</p>
+                    <button onclick="contactWAWithNumber('6285777782248', 'Luka Kecil')">Hubungi Saya</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
